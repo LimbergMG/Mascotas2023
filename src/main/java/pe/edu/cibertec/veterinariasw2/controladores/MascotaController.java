@@ -4,7 +4,7 @@ package pe.edu.cibertec.veterinariasw2.controladores;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
-
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
@@ -25,5 +25,12 @@ public class MascotaController{
         return mascotaRepository.findAll();
     }
 
+    @PostMapping("registrarMascota")
+    public Long registrarMascota(Mascota mascota){
+        Mascota mascotaGuardada = mascotaRepository.save(mascota);
+
+
+        return mascotaGuardada.getId();
+    }
 
 }

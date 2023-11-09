@@ -1,4 +1,4 @@
-package pe.edu.cibertec.veterinariasw2;
+package pe.edu.cibertec.veterinariasw2.controladores;
 
 
 import java.util.List;

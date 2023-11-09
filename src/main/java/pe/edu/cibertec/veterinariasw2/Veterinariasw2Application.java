@@ -15,7 +15,7 @@ public class Veterinariasw2Application {
 		@Bean
 	public CommandLineRunner ejecutar(){
 		return args -> {
-			System.out.println("Hola Mundo");
+			System.out.println("Conectado");
 		}; 
 	}
 

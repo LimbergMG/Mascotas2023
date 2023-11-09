@@ -13,7 +13,8 @@ import lombok.Data;
 public class Mascota {
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    public
     Long id;
-    String nombre;
-    String dueño;
+    public String nombre;
+    public String dueño;
 }

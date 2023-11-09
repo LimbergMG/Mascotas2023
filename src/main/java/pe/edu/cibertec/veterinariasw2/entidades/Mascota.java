@@ -17,4 +17,6 @@ public class Mascota {
     Long id;
     public String nombre;
     public String dueño;
+    
+    Boolean estaEliminado;
 }
